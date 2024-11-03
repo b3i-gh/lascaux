@@ -43,7 +43,7 @@ Using the testing libraries provided by SpringBoot (*spring-boot-starter-test*) 
 
 The ERD is fairly simple, considering the scope of the application: Schedules (the entity directly impacted by the search API) point directly to Movies and Rooms via foreign keys. Ideally some constraints should be introduced when the DB is manipulated, but since there are no APIs that allow to update or delete the data we could assume some degree of consistency in the provided data.
 
-![img.png](ER.png)
+![ER Diagram](https://raw.githubusercontent.com/b3i-gh/lascaux/main/ER.png)
 
 ---
 
