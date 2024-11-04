@@ -35,7 +35,9 @@ The API provided can be reached with a plain GET Http request (e.g. `localhost:8
 Optionally two parameters can be used within the GET request (`localhost:8080/api/schedules?startDate=2024-09-30&endDate=2024-10-03`) to focus the results on a specific date range, like a specific week. The accepted format for the parameters is the standard ISO date format, **YYYY-MM-DD**.
 
 ### Testing
-Using the testing libraries provided by SpringBoot (*spring-boot-starter-test*) and **MockMvc**, some simple tests ahs been implemented to guarantee the basic API functions. More complex and specific tests, including edge cases, should be added when the project will proceed beyond the prototyping phase. 
+Using the testing libraries provided by SpringBoot (*spring-boot-starter-test*) and **MockMvc**, some simple tests ahs been implemented to guarantee the basic API functions. More complex and specific tests, including edge cases, should be added when the project will proceed beyond the prototyping phase.
+
+Inside **mock-data.sql** there are some scripts to populate the DB via H2 console in order to test the app. This could be also achieved automatically setting *spring.datasource.schema*, *spring.datasource.data* and *spring.sql.init.mode* properties inside **application.properties**.
 
 ---
 
